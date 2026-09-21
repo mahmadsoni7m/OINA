@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Mirror outline -->
+    <path
+        android:strokeColor="#7DD3FC"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:pathData="M54,24 C38,24 26,38 26,56 C26,76 40,90 54,90 C68,90 82,76 82,56 C82,38 70,24 54,24Z" />
+    <!-- Stand -->
+    <path
+        android:strokeColor="#7DD3FC"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:pathData="M54,90 L54,100" />
+    <path
+        android:strokeColor="#7DD3FC"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:pathData="M40,100 L68,100" />
+    <!-- Reflection glint -->
+    <path
+        android:strokeColor="#A5E4FF"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:pathData="M42,40 C40,50 40,62 46,72" />
+</vector>
