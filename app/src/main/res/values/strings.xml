@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OINA</string>
+    <string name="app_subtitle">Digital Mirror</string>
+    <string name="app_developer">SONI</string>
+    <string name="app_description">Offline Android Mirror</string>
+
+    <string name="cd_settings">Танзимот</string>
+    <string name="cd_camera_switch">Иваз кардани камера</string>
+    <string name="cd_capture">Гирифтани акс</string>
+    <string name="cd_screen_light">Рӯшноии экран</string>
+    <string name="cd_zoom">Танзими наздиккунӣ</string>
+    <string name="zoom_format">%.1fx</string>
+
+    <string name="permission_title">Дастрасӣ ба камера лозим аст</string>
+    <string name="permission_body">OINA танҳо барои нишон додани чеҳраи шумо ҳамчун оина камераро истифода мебарад. Ягон акс ё видео бе иҷозати шумо нигоҳ дошта намешавад ва интернет истифода намешавад.</string>
+    <string name="permission_grant">Иҷозат додан</string>
+    <string name="permission_denied_body">Шумо дастрасии камераро рад кардед. Барои истифодаи OINA камераро аз Танзимоти дастгоҳ фаъол созед.</string>
+    <string name="permission_open_settings">Кушодани Танзимот</string>
+    <string name="camera_unavailable">Камера дастрас нест</string>
+
+    <string name="settings_title">Танзимот</string>
+    <string name="cd_back">Бозгашт</string>
+
+    <string name="section_camera">Камера</string>
+    <string name="setting_mirror_preview">Намоиши оинавӣ</string>
+    <string name="setting_mirror_preview_desc">Нишон додани тасвир ба таври оина (баръакс)</string>
+    <string name="setting_save_mirrored">Захира кардани акси оинавӣ</string>
+    <string name="setting_save_mirrored_desc">Аксро ҳамон тавре ки дар экран мебинед захира кунед</string>
+    <string name="setting_default_camera">Камераи пешфарз</string>
+    <string name="setting_default_camera_front">Пешӣ</string>
+    <string name="setting_default_camera_back">Пасӣ</string>
+
+    <string name="section_appearance">Намуди зоҳирӣ</string>
+    <string name="setting_theme">Мавзӯъ</string>
+    <string name="theme_dark">Торик</string>
+    <string name="theme_light">Равшан</string>
+    <string name="theme_system">Мувофиқи низом</string>
+
+    <string name="section_display">Экран</string>
+    <string name="setting_keep_screen_on">Экранро равшан нигоҳ доштан</string>
+    <string name="setting_keep_screen_on_desc">Ҳангоми истифодаи OINA экран хомӯш нашавад</string>
+    <string name="setting_brightness">Дараҷаи рӯшноӣ</string>
+
+    <string name="section_about">Дар бораи барнома</string>
+    <string name="about_version">Версия</string>
+    <string name="about_developer">Барномасоз</string>
+    <string name="about_description">Тавсиф</string>
+
+    <string name="photo_saved">Акс захира шуд</string>
+    <string name="photo_save_failed">Акс захира нашуд</string>
+</resources>

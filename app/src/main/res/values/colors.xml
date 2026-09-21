@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="oina_black">#0A0A0C</color>
+    <color name="oina_surface_dark">#151518</color>
+    <color name="oina_surface_dark_elevated">#1E1E22</color>
+    <color name="oina_accent">#7DD3FC</color>
+    <color name="oina_accent_soft">#A5E4FF</color>
+    <color name="oina_on_dark">#F5F5F7</color>
+    <color name="oina_muted_dark">#9A9AA2</color>
+
+    <color name="oina_white">#FFFFFF</color>
+    <color name="oina_surface_light">#F7F7F9</color>
+    <color name="oina_surface_light_elevated">#FFFFFF</color>
+    <color name="oina_accent_light">#0284C7</color>
+    <color name="oina_on_light">#101012</color>
+    <color name="oina_muted_light">#6B6B72</color>
+
+    <color name="oina_error">#FF6B6B</color>
+</resources>
