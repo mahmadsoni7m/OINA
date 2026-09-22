@@ -58,6 +58,9 @@ import com.soni.oina.ui.components.ZoomControl
 import com.soni.oina.utils.ImageSaver
 import android.content.Context
 import android.content.ContextWrapper
+import androidx.compose.foundation.gestures.detectTransformGestures
+import androidx.compose.ui.input.pointer.pointerInput
+
 
 private tailrec fun Context.findActivity(): Activity? = when (this) {
     is Activity -> this
