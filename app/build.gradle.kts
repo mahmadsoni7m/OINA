@@ -7,17 +7,17 @@ android {
     namespace = "com.soni.oina"
     compileSdk = 34
 
-    defaultConfig {
+defaultConfig {
         applicationId = "com.soni.oina"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0.0"
 
-        vectorDrawables.useSupportLibrary = true
+vectorDrawables.useSupportLibrary = true
     }
 
-    buildTypes {
+buildTypes {
         debug {
             isMinifyEnabled = false
             applicationIdSuffix = ".debug"
@@ -34,67 +34,65 @@ android {
         }
     }
 
-    compileOptions {
+compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
+kotlinOptions {
         jvmTarget = "17"
     }
 
-    buildFeatures {
+buildFeatures {
         compose = true
         buildConfig = true
     }
 
-    composeOptions {
+composeOptions {
         kotlinCompilerExtensionVersion = "1.5.14"
     }
 
-    packaging {
+packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
 }
-dependencies {
-    implementation("androidx.compose.foundation:foundation:1.6.0") // ё версияи ҷадидтар
-    implementation("androidx.compose.ui:ui:1.6.0")
-}
 
 dependencies {
     val composeBom = platform("androidx.compose:compose-bom:2024.06.00")
 
-    implementation("androidx.core:core-ktx:1.13.1")
+implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.3")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.3")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.3")
     implementation("androidx.activity:activity-compose:1.9.1")
 
-    implementation(composeBom)
+implementation(composeBom)
     androidTestImplementation(composeBom)
 
+// Compose dependencies (версияҳо аз BOM гирифта мешаванд)
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3:1.2.1")
+    implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.material:material-icons-extended")
+    implementation("androidx.compose.foundation:foundation") // ✅ барои pointerInput
     debugImplementation("androidx.compose.ui:ui-tooling")
 
-    implementation("androidx.navigation:navigation-compose:2.7.7")
+implementation("androidx.navigation:navigation-compose:2.7.7")
 
-    // CameraX
+// CameraX
     val cameraxVersion = "1.3.4"
     implementation("androidx.camera:camera-core:$cameraxVersion")
     implementation("androidx.camera:camera-camera2:$cameraxVersion")
     implementation("androidx.camera:camera-lifecycle:$cameraxVersion")
     implementation("androidx.camera:camera-view:$cameraxVersion")
 
-    // Preferences storage (Settings)
+// Preferences storage (Settings)
     implementation("androidx.datastore:datastore-preferences:1.1.1")
 
-    testImplementation("junit:junit:4.13.2")
+testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
 }
