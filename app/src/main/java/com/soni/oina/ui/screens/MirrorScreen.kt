@@ -53,6 +53,7 @@ import com.soni.oina.camera.CameraController
 import com.soni.oina.settings.OinaSettings
 import com.soni.oina.ui.components.CameraPreviewView
 import com.soni.oina.ui.components.ControlBar
+import com.soni.oina.ui.components.MirrorGlassOverlay
 import com.soni.oina.ui.components.PermissionRationale
 import com.soni.oina.ui.components.ZoomControl
 import com.soni.oina.utils.ImageSaver
@@ -218,6 +219,10 @@ private fun MirrorContent(
                     style = MaterialTheme.typography.bodyLarge
                 )
             }
+        }
+
+        if (!cameraUnavailable) {
+            MirrorGlassOverlay(modifier = Modifier.fillMaxSize())
         }
 
         // Top bar
