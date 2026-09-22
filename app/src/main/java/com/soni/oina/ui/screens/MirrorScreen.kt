@@ -42,7 +42,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.input.pointerInput
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.res.stringResource
@@ -58,9 +58,6 @@ import com.soni.oina.ui.components.ZoomControl
 import com.soni.oina.utils.ImageSaver
 import android.content.Context
 import android.content.ContextWrapper
-import androidx.compose.foundation.gestures.detectTransformGestures
-import androidx.compose.ui.input.pointer.pointerInput
-
 
 private tailrec fun Context.findActivity(): Activity? = when (this) {
     is Activity -> this
